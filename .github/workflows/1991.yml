@@ -9,7 +9,7 @@ jobs:
 
     steps:
     - name: Enable RDP Access
-        run: |
+        run:
           net user runneradmin MyStrongPassword123 /add
           net localgroup administrators runneradmin /add
           Enble-computerRestors -Drive "C:\"
